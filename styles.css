@@ -1,29 +1,115 @@
-/* Estilos globales */
+/* Configuración General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 40px;
-    background-color: #f8f9fa;
-    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333; /* Dark Charcoal para textos */
+    background-color: #f4f4f4; /* Light Gray para el fondo */
+    padding: 20px;
 }
 
-/* Estilos para el encabezado */
-h1 {
-    color: #007bff;
+/* Encabezado */
+header {
+    color: #ffffff; /* Blanco */
+    padding: 20px 0;
     text-align: center;
+    background-color: #003366; /* Dark Sapphire Blue */
 }
 
-/* Estilos para párrafos */
-p {
-    font-size: 18px;
-    text-align: justify;
+.profile-image {
+    width: 120px; /* Ajusta según necesites */
+    height: 120px; /* Igual al ancho para forma circular */
+    border-radius: 50%; /* Esto hace la imagen redonda */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    display: block;
+    margin: 10px auto; /* Centra horizontalmente la imagen */
+    border: 3px solid #ffffff; /* Borde blanco para destacar */
 }
 
-/* Estilos para enlaces */
-a {
-    color: #007bff;
+header h1 {
+    font-size: 2.5em;
+    margin-top: 20px; /* Espacio después de la imagen del logo */
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Blanco */
     text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
 }
 
-a:hover {
-    text-decoration: underline;
+nav ul li a:hover {
+    color: #FFD700; /* Golden para resaltar */
+}
+
+/* Secciones */
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background: #FFFFFF; /* Blanco para las secciones */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #005f69; /* Deep Aqua */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #003366; /* Dark Sapphire Blue para subrayar */
+}
+
+/* Experiencia */
+article {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-left: 4px solid #003366; /* Dark Sapphire Blue para destacar */
+    padding-left: 15px;
+}
+
+/* Habilidades */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    background-color: #005f69; /* Deep Aqua para habilidades */
+    color: #ffffff; /* Blanco */
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 0.85em;
+}
+
+/* Contacto */
+address {
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #003366; /* Dark Sapphire Blue */
+    color: #ffffff; /* Blanco */
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
